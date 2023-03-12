@@ -1,0 +1,19 @@
+d = 100                 // distancia de Ribeirao Preto 'a Franca
+Tcar = 100 / 110        // tempo gasto pelo carro para percorrer d
+Ttruck = 100 / 80       // tempo gasto pelo caminhao para percorrer d
+
+x       = x             // ponto de encontro entre o carro e o caminhao
+Tcar    = x / 110       // tempo gasto pelo carro para percorrer x 
+Ttruck  = d - x / 80    // tempo gasto pelo caminhao para percorrer caminho restante de d - x
+
+// encontrar x
+Tcar = Ttruck
+x / 110 = (d - x + pedagio) / 80      // 13.33 = km nao percorridos por esperar no pedagio
+
+8*x = 11*( 100 - x + 13.33)
+
+8*x = 11*100 - 11*x + 146.63
+19*x = 11*100 + 146.63
+x = 1246.63/19
+x = 65,61              // ponto de encontro esta 'a 65.61 km de Ribeirao Preto
+                       // ambos possuem a mesma distancia de Ribeirao Preto
